@@ -8,12 +8,12 @@ import (
 	"github.com/faiface/beep/mp3"
 	"github.com/faiface/beep/speaker"
 	"github.com/faiface/beep"
-    "fmt"
-    "image"
-    "image/color"
-    "image/draw"
-    "image/gif"
-    "io"
+	"fmt"
+	"image"
+	"image/color"
+	"image/draw"
+	"image/gif"
+	"io"
 )
 
 const FrameDelayMultiply = 10
