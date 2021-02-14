@@ -226,8 +226,6 @@ func (apple *BadApple) Start() {
 	overpaintImage := image.NewRGBA(image.Rect(0, 0, imgWidth, imgHeight))
 	draw.Draw(overpaintImage, overpaintImage.Bounds(), apple.Media.Image[0], image.ZP, draw.Src)
 
-	go apple.PlaySound(250)
-
     for i, srcImg := range apple.Media.Image {
 		go apple.DrawFrame(overpaintImage, srcImg)
 		time.Sleep(time.Duration(int(float64(apple.Media.Delay[i]) * FrameDelayMultiply)) * time.Millisecond)
@@ -263,5 +261,6 @@ func main() {
 
 	apple.ReadGif("Bad_Apple.gif")
 	apple.ReadAudio("Bad_Apple.mp3")
+	go apple.PlaySound(250)
 	apple.Start()
 }
