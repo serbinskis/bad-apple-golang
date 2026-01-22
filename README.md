@@ -4,6 +4,6 @@ This repository contains a version of the "Bad Apple!!" animation running in a c
 
 ## Video Demo
 
-Click the image below to watch the video demonstration of the project.
-
-[![Watch the video](https://github.com/user-attachments/assets/8ff9e399-9e88-469a-9f09-0c6450608652)](Bad%20Apple%20-%20Golang.mp4)
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/1bd25c4c-0743-4f40-998e-6ecc73231487"> </video>
+</div>
